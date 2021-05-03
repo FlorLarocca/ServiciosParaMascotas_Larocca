@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoralos</title>
+    <link rel="stylesheet" href="css/EstiloCSS.css">
+    <link rel="stylesheet" href="css/estiloo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,200&display=swap" rel="stylesheet">
+    <style>
+      .EstiloGrillaUno{
+        display:grid;
+        grid-template-columns: 150px auto 400px;
+        grid-template-rows: 25vh 25vh 25vh 25vh;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        grid-template-areas: 
+                        "EstiloG1    EstiloG2    EstiloG2"
+                        "EstiloG1    EstiloG3    EstiloG5"
+                        "EstiloG1    EstiloG4    EstiloG5"
+                        "EstiloFuter EstiloFuter EstiloFuter"
+      }
+
+      .EstiloG1{
+          background-color: rgb(167, 145, 183);
+          grid-area: EstiloG1;
+          text-align: center;
+      }
+
+      .EstiloG2{
+          grid-area: EstiloG2;
+          justify-content: center;
+      }
+
+      .EstiloG3{
+          background-color: rgb(50, 175, 181);
+          grid-area: EstiloG3;
+          text-align: center;
+      }
+
+      .EstiloG4{
+          grid-area: EstiloG4;
+          text-align: center;
+      }
+
+      /*EstiloG5 editado en SASS*/
+
+      .EstiloFuter{
+          background-color: lightcyan;
+          grid-area: EstiloFuter;
+          text-align: center;
+      }
+
+    </style>
+
+</head>
+<body>
+    <div class="PrimeraParteParaElResto">
+        <img
+            src= https://dewey.tailorbrands.com/production/brand_version_mockup_image/171/4740437171_2b6ac176-abab-4c38-9724-3375b2ecf5d5.png?cb=1614303483
+            height="30px"
+            width="100px"
+            alt= "Logo" />
+
+        <nav>
+          <ul class="EstiloUl">
+            <li class="EstiloListas"> <a href="PaginaPrincipal.html">Página Principal</a> </li>
+            <li class="EstiloListas"> <a href="Servicios.html">Servicios</a></li>
+            <li class="EstiloListas"> <a href="Galeria.html">Fotos</a>
+              <ul>
+                <li class="EstiloListas"> <a href="GaleriaPerros.html">Galería de perros </a></li> 
+                <li class="EstiloListas"> <a href="GaleriaGatos.html">Galería de gatos </a></li>
+              </ul>
+            </li>
+            <li class="EstiloListas"> <a href="Comentarios.html">Comentarios</a> </li>
+            <li class="EstiloListas"> <a href="Información.html">Información de contacto</a> </li>
+        </ul>
+
+        <h1 class="EstiloTitulo"> Fotos Perros </h1>
+        <hr class="HRespecifico">
+        </nav>
+    </div>
+    
+    <div class="EstiloGrillaUno">
+      <aside class="EstiloG1"> 
+        <img class="ImagenChiquita" src="FOTOS/FotosSubmenus/FotosPerros/ChicaConPerrito.png">
+      </aside>
+      <div class="EstiloG2"> 
+        <h2 class="LetrasSubmenú"> Podés mandarnos una foto con tu mascota y sumarla al mural</h2>
+        <h3 class="EstiloNI"> ¡Cada día somos más y más! </h3>
+      </div>
+      <div class ="EstiloG3"> 
+        <img class="ImagenNoChiquita" src="FOTOS/FotosSubmenus/FotosPerros/ChicaConPerrito2.png">
+      </div>
+      <div class ="EstiloG4"> 
+        <img class="ImagenNoChiquita" src="FOTOS/FotosSubmenus/FotosPerros/ChicaConPerrito3.png">
+      </div>
+      <aside class ="EstiloG5"> 
+        <h2 class="EstiloG5__LetrasGrandes"> Te dejamos algunas ideas de fotos con tu perro:</h2>
+        <ol class="EstiloG5__Lista">
+            <li class="EstiloG5__Item">Saltando</li>
+            <li class="EstiloG5__Item">Alimentándolo</li>
+            <li class="EstiloG5__Item">Vistiéndolo</li>
+            <li class="EstiloG5__Item">Jugando</li>
+            <li class="EstiloG5__Item">Paseándolo</li>
+        </ol>
+      </aside>
+      <footer class ="EstiloFuter"> 
+        <img class="ImagenFuter" src="FOTOS/FotosSubmenus/FotosPerros/futer.png">
+      </footer>
+    </div>
+
+</body>
+</html>
