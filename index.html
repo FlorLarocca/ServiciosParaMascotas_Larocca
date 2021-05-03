@@ -4,9 +4,163 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <title>Adoralos</title>
+    <link rel="stylesheet" href="css/EstiloCSS.css">
+    <link rel="stylesheet" href="css/estiloo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,200&display=swap" rel="stylesheet">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
     
+    <meta name="description="content="Adoralos es una conocida línea de servicios para mascotas que ofrece artículos y servicios para múltiples especies. Cuenta con tratamientos a corto y largo plazo, junto con flexibles y accesibles métodos de pago. Contacta rápidamente">
+
+    <style>
+
+        /*Grid*/
+
+        .EstiloGrillaPrincipal{
+        display:grid;
+        grid-template-columns: 40vw auto;
+        grid-template-rows: 5vh 50vh 8vh 15vh 22vh;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+        grid-template-areas: 
+                        "EstiloHeaderH        EstiloHeaderH"
+                        "EstiloAticleH        EstiloAsideH"
+                        "EstiloInvitaciónH    EstiloInvitaciónH"
+                        "EstiloPieH          EstiloPieH"
+                        "EstiloFooterH        EstiloFooterH"
+      }
+
+      .EstiloHeaderH{
+          background-color: white;
+          grid-area: EstiloHeaderH;
+          text-align: center;
+          justify-items: center;
+      }
+
+      .EstiloAticleH{
+          background-color: rgb(145, 217, 221);
+          grid-area: EstiloAticleH;
+          text-align: center;
+          margin-left: 10px;
+          margin-top:10px;
+      }
+
+      .EstiloAsideH{
+          grid-area: EstiloAsideH;
+          text-align: center;
+      }
+
+      .EstiloInvitaciónH{
+          grid-area: EstiloInvitaciónH;
+          justify-items: center;
+          overflow:hidden;
+      }
+
+      .EstiloPieH{
+          grid-area: EstiloPieH;
+          
+      }
+
+      .EstiloFooterH{
+          grid-area: EstiloFooterH;
+          margin-top: 20px;
+      }
+
+      .ImagenPieEstilo{
+          height: 100%;
+          width: 100%;
+      }
+
+      .EstiloImagenPrincipal{
+            height: 80%;
+            width: 100%;
+        }
+
+        @media only screen and (max-width: 885px) {
+            .EstiloGrillaPrincipal{
+            display:grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 9% 45% 20% 15% 9% 5%;
+            margin-top: 0px;
+            margin-left: 0px;
+            margin-bottom: 0px;
+            grid-template-areas: 
+                            "EstiloHeaderH"        
+                            "EstiloAticleH"        
+                            "EstiloAsideH"
+                            "EstiloInvitaciónH"
+                            "EstiloPieH"
+                            "EstiloFooterH"
+            }
+        }
+
+
+    </style>
+</head>
+
+<body>   
+    <div class="PrimeraParte">
+        <img
+            src= https://dewey.tailorbrands.com/production/brand_version_mockup_image/171/4740437171_2b6ac176-abab-4c38-9724-3375b2ecf5d5.png?cb=1614303483
+            height="30px"
+            width="100px"
+            alt= "Logo" />
+
+        <nav>
+            <ul class="EstiloUl">
+                <li class="EstiloListas"> <a href="index.html">Página Principal</a> </li>
+                <li class="EstiloListas"> <a href="Servicios.html">Servicios</a></li>
+                <li class="EstiloListas"> <a href="Galeria.html">Fotos</a>
+                  <ul>
+                    <li class="EstiloListas"> <a href="GaleriaPerros.html">Galería de perros </a></li> 
+                    <li class="EstiloListas"> <a href="GaleriaGatos.html">Galería de gatos </a></li>
+                  </ul>
+                </li>
+                <li class="EstiloListas"> <a href="Comentarios.html">Comentarios</a> </li>
+                <li class="EstiloListas"> <a href="Información.html">Información de contacto</a> </li>
+            </ul>
+        </nav>
+        <h1 class="animate__animated animate__backInDown  EstiloTitulo" > ¡Adoralos! </h1>
+        <h2 class="Letrasx"> Servicios para mascotas </h2>
+        </div>    
+
+        <div class="EstiloGrillaPrincipal">
+            <header class="EstiloHeaderH"> 
+                <hr class="HRespecifico">
+                <h3 class="EstiloH3"> <em> ¡Encontrá con nosotros todos las atenciones que tu mascota necesita! </em> </h3>
+                <hr class="HRespecifico">
+            </header>
+            <article class="EstiloAticleH"> 
+                <h1 class="EstiloNI"> Cuidalos y adoralos </h1>
+                    <img
+                    class="EstiloImagenPrincipal"
+                    src="FOTOS/PaginaPrincipal/Principal.png"
+                    alt= "Foto perros" />
+            </article>
+            <aside class="EstiloAsideH">
+                <h2 class="Letrasx22"> <em> Ofrecemos múltiples opciones para que elijas las prestaciones que más adecuadas consideres para tu fiel amigo </em></h2>
+                <h3 class="EstiloNI"> <strong> ¡Hasta podés conseguir grandes descuentos para invitados! </strong></h3>
+            </aside>
+            <div class="EstiloInvitaciónH">
+                <hr class="HRespecifico">
+                <h2 class="LetrasAnimar"> Te invitamos a visitar nuestras alternativas y evacuar todas las dudas que te puedan llegar a surgir </h2>  
+            </div>
+            <div class="EstiloPieH"> 
+                <img
+                    class="ImagenPieEstilo"
+                    src="FOTOS/PaginaPrincipal/ImagenPieFinal.png"
+                    alt= "Foto mascotas";
+                />
+            </div>
+            <footer class="EstiloFooterH"> 
+                <h2 class="Letrasx"> ¡No dudes en consultar! </h2>
+            <footer class="EstiloNI2"> Teléfono: 15 6882-6375 </footer>
+            </footer>
+        </div>
+
 </body>
 </html>
